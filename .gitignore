@@ -1,0 +1,16 @@
+# Vídeo local (grande demais para Git — hospedar separado)
+hero.mp4
+*.mp4
+*.mov
+
+# OS / Windows
+.DS_Store
+Thumbs.db
+desktop.ini
+Desktop.ini
+
+# Dependências futuras
+node_modules/
+
+# Docs internos
+imagens/Descrição de Produto.docx
