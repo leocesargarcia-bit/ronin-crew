@@ -999,9 +999,9 @@ a:focus:not(:focus-visible){outline:none}
 
   <ul class="nav-links">
     <li><a href="#home" data-i18n="n_home">Home</a></li>
-    <li><a href="#categories" data-i18n="n_kimonos">Kimonos</a></li>
-    <li><a href="#nogi" data-i18n="n_nogi">No-Gi</a></li>
-    <li><a href="#lifestyle" data-i18n="n_lifestyle">Lifestyle</a></li>
+    <li><a href="#products" data-i18n="n_kimonos">Kimonos</a></li>
+    <li><a href="#products" data-i18n="n_nogi">No-Gi</a></li>
+    <li><a href="#products" data-i18n="n_lifestyle">Lifestyle</a></li>
     <li><a href="#contact" data-i18n="n_contact">Contato</a></li>
   </ul>
 
@@ -1027,9 +1027,9 @@ a:focus:not(:focus-visible){outline:none}
 <div class="mobile-nav" id="mobile-nav">
   <button class="mob-close" onclick="closeMobNav()">✕</button>
   <a href="#home" onclick="closeMobNav()" data-i18n="n_home">Home</a>
-  <a href="#categories" onclick="closeMobNav()" data-i18n="n_kimonos">Kimonos</a>
-  <a href="#nogi" onclick="closeMobNav()" data-i18n="n_nogi">No-Gi</a>
-  <a href="#lifestyle" onclick="closeMobNav()" data-i18n="n_lifestyle">Lifestyle</a>
+  <a href="#products" onclick="closeMobNav()" data-i18n="n_kimonos">Kimonos</a>
+  <a href="#products" onclick="closeMobNav()" data-i18n="n_nogi">No-Gi</a>
+  <a href="#products" onclick="closeMobNav()" data-i18n="n_lifestyle">Lifestyle</a>
   <a href="#contact" onclick="closeMobNav()" data-i18n="n_contact">Contato</a>
 </div>
 
@@ -1149,11 +1149,6 @@ a:focus:not(:focus-visible){outline:none}
   </div>
 </div>
 
-<!-- id anchors kept for nav links -->
-<div id="categories" style="display:none"></div>
-<div id="nogi" style="display:none"></div>
-<div id="lifestyle" style="display:none"></div>
-
 <!-- ══════════════════════════════════════
      PRODUCTS
 ══════════════════════════════════════ -->
@@ -1224,7 +1219,7 @@ a:focus:not(:focus-visible){outline:none}
       <div class="prod-info">
         <div class="prod-id">RC-HD-001</div>
         <div class="prod-cat">Lifestyle / Hoodies</div>
-        <div class="prod-name">HOODIE</div>
+        <div class="prod-name">Hoodies</div>
         <div class="prod-rating">★★★★★ <span class="prod-rating-count">(19)</span></div>
         <div class="prod-foot">
           <span><span class="prod-price">€75</span></span>
@@ -1239,7 +1234,7 @@ a:focus:not(:focus-visible){outline:none}
       <div class="prod-info">
         <div class="prod-id">RC-BT-001</div>
         <div class="prod-cat">Graduação / Faixas</div>
-        <div class="prod-name">BELTS</div>
+        <div class="prod-name">Belts</div>
         <div class="prod-rating">★★★★★ <span class="prod-rating-count">(35)</span></div>
         <div class="prod-foot">
           <span><span class="prod-price">€35</span></span>
@@ -1703,7 +1698,7 @@ const PRODS = {
       {hex:'#4A5D23',label:'Oliva'},{hex:'#1e3a5f',label:'Azul Marinho'},
       {hex:'#7C3AED',label:'Roxo'},{hex:'#F59E0B',label:'Amarelo'}
     ],
-    desc:'Rashguard de manga longa com compressão muscular graduada. Tecido anti-UV SPF50+, costuras flatlock para evitar irritações. Impressão sublimada permanente com design exclusivo Ronin Crew.',
+    desc:'Built for the Mats. Customized for You. Step onto the mats with gear that’s engineered to endure. Our custom BJJ rash guards combine heavy-duty resilience with a tailored fit, designed specifically to withstand the brutal friction of everyday rolls, takedowns, and submissions. Crafted from a premium 240 GSM blend of 85% polyester and 15% spandex, this rash guard offers a locked-in, compression fit that retains its shape without restricting your movement. It’s thick enough to eliminate transparency and defend against mat burns, yet breathable enough to wick away sweat during intense sparring. Make it uniquely yours. From custom team academies to individual designs, we build it to your exact specifications—with premium upgrades built for serious grapplers.',
     images:[
       {src:'imagens/Rashguards/screen(2).png',                                  alt:'Rashguard — frente estúdio'},
       {src:'imagens/Rashguards/screen(5).png',                                  alt:'Rashguard — perfil lateral'},
@@ -1735,7 +1730,7 @@ const PRODS = {
     ]
   },
   'hoodies':{
-    icon:'🧥', cat:'Lifestyle / Hoodies', name:'HOODIE',
+    icon:'🧥', cat:'Lifestyle / Hoodies', name:'Hoodies',
     sku:'RC-HD-001', price:'€75', old:'',
     sizes:['S','M','L','XL','XXL'],
     colors:[
@@ -1743,7 +1738,7 @@ const PRODS = {
       {hex:'#4A5D23',label:'Oliva'},{hex:'#1e3a5f',label:'Azul Marinho'},
       {hex:'#7C3AED',label:'Roxo'},{hex:'#F59E0B',label:'Amarelo'}
     ],
-    desc:'Hoodie 100% algodão premium 380g/m² com bordado exclusivo Ronin Crew. Bolso canguru reforçado, cordão ajustável e acabamento interno escovado para máximo conforto. Do tatame para as ruas de Helsinki.',
+    desc:'100% cotton hoodies with embroidery.',
     images:[
       {src:'imagens/Hoodies/WhatsApp Image 2026-05-28 at 12.48.53.jpeg',    alt:'Hoodie — frente'},
       {src:'imagens/Hoodies/WhatsApp Image 2026-05-28 at 12.48.53 (1).jpeg',alt:'Hoodie — costas'},
@@ -1752,7 +1747,7 @@ const PRODS = {
     ]
   },
   'belts':{
-    icon:'🎽', cat:'Graduação / Faixas', name:'BELTS',
+    icon:'🎽', cat:'Graduação / Faixas', name:'Belts',
     sku:'RC-BT-001', price:'€35', old:'',
     sizes:['M1','M2','M3','M4','F'],
     colors:[
@@ -1760,7 +1755,7 @@ const PRODS = {
       {hex:'#4A5D23',label:'Oliva'},{hex:'#3b82f6',label:'Azul'},
       {hex:'#7C3AED',label:'Roxo'},{hex:'#dc2626',label:'Vermelho'}
     ],
-    desc:'Faixa oficial BJJ 100% algodão premium 350g/m². Resistente ao desbotamento por lavagem frequente. Bordado Ronin Crew nas duas extremidades. Disponível em todas as graduações.',
+    desc:'100% cotton hoodies with embroidery.',
     images:[]
   }
 };
@@ -2229,6 +2224,15 @@ setLang('en');
     return;
   }
 
+  // Skip the scroll-expand intro on mobile/touch devices: the gesture-driven
+  // progress can fail to complete (browser intercepts touch, short taps, etc.),
+  // which leaves the overlay covering the screen with body scroll locked —
+  // making the whole site appear broken on phones.
+  if(window.innerWidth < 768){
+    wrap.style.display = 'none';
+    return;
+  }
+
   let progress = 0;
   let dismissed = false;
   let touchStartY = 0;
@@ -2311,6 +2315,10 @@ setLang('en');
   // Skip button
   const skipBtn = document.getElementById('se-skip-btn');
   if(skipBtn) skipBtn.addEventListener('click', dismiss);
+
+  // Failsafe: never let the intro trap a user — auto-dismiss after 15s
+  // even if the scroll/swipe gesture never completes.
+  setTimeout(dismiss, 15000);
 
   render();
 })();
